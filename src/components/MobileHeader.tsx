@@ -21,9 +21,6 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
   const navItems: { id: ViewMode; label: string }[] = [
     { id: 'gallery', label: 'All Artworks' },
     { id: 'about', label: 'This is Me!' },
-    { id: 'prints', label: 'Art Prints' },
-    { id: 'goods', label: 'Books & Games' },
-    { id: 'commissions', label: 'Commissions' },
   ];
 
   const handleNavClick = (view: ViewMode) => {
