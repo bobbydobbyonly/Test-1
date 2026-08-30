@@ -20,10 +20,7 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({
 
   const categories: { id: ArtworkCategory; label: string }[] = [
     { id: 'all', label: 'All Works' },
-    { id: 'editorial', label: 'Editorial & The New Yorker' },
-    { id: 'comics', label: 'Comics & Zines' },
-    { id: 'games', label: 'Games & Packaging' },
-    { id: 'covers', label: 'Covers & Books' },
+    { id: 'comics', label: 'Fan Art' },
   ];
 
   const filteredArtworks = useMemo(() => {
@@ -99,7 +96,7 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({
             No artworks found matching "{searchQuery}"
           </p>
           <p className="text-xs text-neutral-500 mt-1">
-            Try searching for "New Yorker", "game", "cover", or browse all work.
+            Try a different search or browse all work.
           </p>
           <button
             onClick={() => {
@@ -193,4 +190,3 @@ export const GalleryGrid: React.FC<GalleryGridProps> = ({
     </div>
   );
 };
-
