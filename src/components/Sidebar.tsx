@@ -50,10 +50,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <AvatarIcon size={110} />
           <div className="mt-3">
             <h2 className="font-extrabold text-base tracking-tight text-neutral-900 leading-tight">
-              Jeremy Nguyen
+              Jo
             </h2>
             <p className="text-xs text-neutral-500 font-medium">
-              Cartoonist & Illustrator
+              Aspiring Artist
             </p>
           </div>
         </button>
@@ -161,4 +161,3 @@ export const Sidebar: React.FC<SidebarProps> = ({
     </aside>
   );
 };
-
