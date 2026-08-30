@@ -1,6 +1,4 @@
 import { Artwork } from '../types';
-import meowthArt from '../assets/meowth-tom-and-jerry-art.png';
-import meowthPrint from '../assets/meowth-tom-and-jerry-art-print.jpg';
 
 export const ARTWORKS: Artwork[] = [
   {
@@ -9,8 +7,8 @@ export const ARTWORKS: Artwork[] = [
     client: 'Jo Studio 38',
     category: 'comics',
     year: 2026,
-    image: meowthArt,
-    additionalImages: [meowthPrint],
+    image: 'https://raw.githubusercontent.com/bobbydobbyonly/Test-1/main/Meowth-Tom-and-Jerry-Art.PNG',
+    additionalImages: ['https://raw.githubusercontent.com/bobbydobbyonly/Test-1/main/Meowth-Tom-and-Jerry-Art-Prints.jpg'],
     aspectRatio: 'square',
     description: 'A playful Meowth fan-art illustration inspired by Tom and Jerry. Use the image controls to view the finished art print.',
     technique: 'Digital illustration',
