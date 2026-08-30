@@ -20,6 +20,7 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({
 }) => {
   const [copiedLink, setCopiedLink] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -33,6 +34,8 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({
   }, [artwork, artworks]);
 
   if (!artwork) return null;
+  const artworkImages = [artwork.image, ...(artwork.additionalImages || [])];
+  const displayedArtwork = { ...artwork, image: artworkImages[imageIndex] };
 
   const currentIndex = artworks.findIndex((item) => item.id === artwork.id);
   const handlePrev = () => {
@@ -89,8 +92,18 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({
             }`}
             onClick={() => setIsZoomed(!isZoomed)}
           >
-            <ArtworkVisual artwork={artwork} className="rounded-xl shadow-lg" />
+            <ArtworkVisual artwork={displayedArtwork} className="rounded-xl shadow-lg" />
           </div>
+
+          {artworkImages.length > 1 && (
+            <div className="absolute top-4 left-4 flex gap-2">
+              {artworkImages.map((_, index) => (
+                <button key={index} onClick={() => setImageIndex(index)} className={`px-3 py-1.5 rounded-full text-[11px] font-bold ${imageIndex === index ? 'bg-neutral-900 text-white' : 'bg-white text-neutral-700'}`}>
+                  {index === 0 ? 'Artwork' : 'Printed copy'}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Zoom Toggle Pill */}
           <button
@@ -248,4 +261,3 @@ export const ArtworkModal: React.FC<ArtworkModalProps> = ({
     </div>
   );
 };
-
