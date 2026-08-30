@@ -8,6 +8,9 @@ interface ArtworkVisualProps {
 }
 
 export const ArtworkVisual: React.FC<ArtworkVisualProps> = ({ artwork, className = '', isHovered = false }) => {
+  if (artwork.image.startsWith('/') || artwork.image.startsWith('data:') || artwork.image.includes('/assets/')) {
+    return <img src={artwork.image} alt={artwork.title} className={`w-full aspect-square object-cover ${className}`} />;
+  }
   // Render specific illustrated artboards matching the user's reference image
   switch (artwork.id) {
     case 'trimming-the-tree':
