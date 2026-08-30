@@ -20,7 +20,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const handleCopyEmail = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigator.clipboard.writeText('jeremywinsagain@gmail.com');
+    navigator.clipboard.writeText('your-email@example.com');
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2000);
   };
@@ -108,19 +108,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {/* Social Icons */}
         <div className="flex items-center space-x-3 text-neutral-700">
           <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            id="social-x-link"
-            className="w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center text-neutral-800 transition-colors"
-            title="Follow on X / Twitter"
-          >
-            <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-            </svg>
-          </a>
-          <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/jo_studio38?igsi=MXR4b2g0MXNhZzIzNw%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             id="social-ig-link"
@@ -139,7 +127,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             className="text-left text-[11px] text-neutral-500 hover:text-neutral-900 transition-colors break-all flex items-center gap-1.5 focus:outline-none"
             title="Click to copy email address"
           >
-            <span>jeremywinsagain@gmail.com</span>
+            <span>your-email@example.com</span>
             {copiedEmail ? (
               <Check className="w-3 h-3 text-emerald-600 shrink-0" />
             ) : (
@@ -155,7 +143,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         {/* Copyright */}
         <p className="text-[11px] text-neutral-400">
-          © {new Date().getFullYear()} Jeremy Nguyen
+          © {new Date().getFullYear()} Jo
         </p>
       </div>
     </aside>
