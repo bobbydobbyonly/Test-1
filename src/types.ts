@@ -9,6 +9,7 @@ export interface Artwork {
   category: ArtworkCategory;
   year: number;
   image: string;
+  additionalImages?: string[];
   aspectRatio: 'tall' | 'square' | 'portrait' | 'wide' | 'panoramic';
   description: string;
   technique: string;
