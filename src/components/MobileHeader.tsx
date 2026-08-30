@@ -45,10 +45,10 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
         <AvatarIcon size={40} />
         <div className="text-left">
           <h1 className="text-sm font-extrabold tracking-tight text-neutral-900 leading-tight">
-            Jeremy Nguyen
+            Jo
           </h1>
           <p className="text-[11px] text-neutral-500 font-medium">
-            Cartoonist & Illustrator
+            Aspiring Artist
           </p>
         </div>
       </button>
@@ -111,17 +111,7 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
           <div className="pt-3 flex items-center justify-between text-xs text-neutral-500 border-t border-neutral-100">
             <div className="flex items-center space-x-3">
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-7 h-7 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-800"
-              >
-                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/jo_studio38?igsi=MXR4b2g0MXNhZzIzNw%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noreferrer"
                 className="w-7 h-7 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-800"
@@ -129,11 +119,10 @@ export const MobileHeader: React.FC<MobileHeaderProps> = ({
                 <Instagram className="w-3.5 h-3.5" />
               </a>
             </div>
-            <span className="text-[11px]">jeremywinsagain@gmail.com</span>
+            <a href="https://www.tiktok.com/@jo_studio38?_r=1" target="_blank" rel="noreferrer" className="text-[11px] hover:text-neutral-900">TikTok @jo_studio38</a>
           </div>
         </div>
       )}
     </header>
   );
 };
-
