@@ -10,7 +10,7 @@ export const ARTWORKS: Artwork[] = [
     image: 'https://raw.githubusercontent.com/bobbydobbyonly/Test-1/main/Meowth-Tom-and-Jerry-Art.PNG',
     additionalImages: ['https://raw.githubusercontent.com/bobbydobbyonly/Test-1/main/Meowth-Tom-and-Jerry-Art-Prints.jpg'],
     aspectRatio: 'square',
-    description: 'A playful Meowth fan-art illustration inspired by Tom and Jerry. Use the image controls to view the finished art print.',
+    description: 'A playful Meowth fan-art illustration inspired by Tom and Jerry.',
     technique: 'Digital illustration',
     hasPrint: true,
     printPrice: 0,
